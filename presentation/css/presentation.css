@@ -1,0 +1,169 @@
+/* 
+
+    Much of this was taken from https://github.com/bartaz/impress.js/blob/master/css/impress-demo.css
+    Feel free to use, re-use, and plagairize any part of this presentation. It is free as in [root] beer.
+
+*/
+
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Presentation-specific styles */
+
+body {
+    background: rgb(0, 66, 99);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(0, 66, 99)), to(rgb(0, 33, 66)));
+    background: -webkit-radial-gradient(rgb(0, 66, 99), rgb(0, 33, 66));
+    background:    -moz-radial-gradient(rgb(0, 66, 99), rgb(0, 33, 66));
+    background:     -ms-radial-gradient(rgb(0, 66, 99), rgb(0, 33, 66));
+    background:      -o-radial-gradient(rgb(0, 66, 99), rgb(0, 33, 66));
+    background:         radial-gradient(rgb(0, 66, 99), rgb(0, 33, 66));
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+.fallback-message {
+	display: none;
+}
+
+.impress-not-supported .fallback-message {
+	display: block;
+}
+
+.past, .future {
+    color: #bbb;
+}
+
+.step {
+    position: relative;
+    width: 900px;
+    padding: 40px;
+    margin: 20px auto;
+    color: #fff;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    font-family: georgia, serif;
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.05;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
+
+.impress-enabled .step div {
+    margin: 0 0 20px 0;
+}
+
+.impress-enabled .step .medium {
+    font-size: 36px;
+}
+
+.impress-enabled .step .small {
+    font-size: 24px;
+}
+
+#about {
+    position: absolute;
+    top: -200px;
+    left: 600px;
+    font-size: 64px;
+
+    -webkit-transform: rotate(-10deg);
+    -moz-transform:    rotate(-10deg);
+    -ms-transform:     rotate(-10deg);
+    -o-transform:      rotate(-10deg);
+    transform:         rotate(-10deg);
+
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay:    0.25s;
+    -ms-transition-delay:     0.25s;
+    -o-transition-delay:      0.25s;
+    transition-delay:         0.25s;
+}
+
+#ilovewebapps {
+    width: 700px;
+}
+
+#code .grow {
+    display: inline-block;
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+#code.present .grow {
+    -webkit-transform: scale(2.0);
+    -moz-transform:    scale(2.0);
+    -ms-transform:     scale(2.0);
+    -o-transform:      scale(2.0);
+    transform:         scale(2.0);
+}

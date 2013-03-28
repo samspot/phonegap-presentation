@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Writing Mobile Apps for iOS, Android, and Windows Phone Simultaneously with PhoneGap</title>
+    
+    <meta name="description" content="Writing Mobile Apps for iOS, Android, and Windows Phone Simultaneously with PhoneGap" />
+    <meta name="author" content="Bryan Hales" />
+
+    <link rel="stylesheet" href="css/presentation.css"></link>
+</head>
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress">
+        <div id="title" class="step" data-x="-1000" data-y="-1500">
+            Writing Mobile Apps for iOS, Android, and Windows Phone Simultaneously with <strong>PhoneGap</strong>
+        </div>
+
+        <div id="about" class="step" data-x="-0" data-y="-1500" data-rotate="90" data-scale="5">
+            <div>whoami?</div>
+            <div>Bryan Hales</div>
+            <div class="medium">@bryanhales</div>
+            <div class="small">First introduction to programming was in Boy Scouts at age 11.</div>
+            <div class="small">My dad taught a “Computers” merit badge class and I was hooked.</div>
+        </div>
+
+        <div id="ilovewebapps" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+            <div class="medium">I've been writing code for the past 20ish years, and particularly love building web apps.</div>
+        </div>
+
+        <div id="phonegapis" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+            PhoneGap...
+        </div>
+
+        <div id="phonegapis1" class="step" data-x="5500" data-y="-850" data-rotate="270" data-scale="6">
+            "PhoneGap, [is] a cross-platform framework for device-neutral mobile development"
+        </div>
+
+        <div id="phonegapis2" class="step" data-x="8000" data-y="-850" data-rotate="270" data-scale="6">
+            Is a mobile framework that allows you to invoke native functionality via javascript
+        </div>
+
+        <div id="phonegapis3" class="step" data-x="10000" data-y="-850" data-rotate="270" data-scale="6">
+            Allows you to write “native” apps for various platforms simultaneously using only HTML, CSS, and JS
+        </div>
+
+        <div id="phonegapis4" class="step" data-x="13000" data-y="-850" data-rotate="270" data-scale="6">
+            Is open-source, actively maintained, and has a huge developer community (400,000+)
+        </div>
+
+        <div id="history" class="step" data-x="3000" data-y="-1000" data-rotate="530" data-scale="3">
+            Helpful History
+        </div>
+
+        <div id="history1" class="step" data-x="3000" data-y="-2000" data-rotate="530" data-scale="3">
+            Created by Nitobi at an iPhoneDevCamp event in San Francisco in 2009.
+        </div>        
+
+        <div id="history2" class="step" data-x="3000" data-y="-3000" data-rotate="530" data-scale="3">
+            Bought by Adobe in 2011.
+        </div>
+
+        <div id="history3" class="step" data-x="3000" data-y="-4000" data-rotate="530" data-scale="3">
+            <div>Adobe then contributed the PhoneGap code to The Apache Foundation.</div>
+
+            <div class="medium">Apache renamed their version of it to “Apache Callback”, and then later to “Cordova”</div>
+        </div>
+
+        <div id="history4" class="step" data-x="3000" data-y="-5000" data-rotate="530" data-scale="3">
+            Cordova is the open source version of PhoneGap, but they are roughly the same.
+        </div>
+
+        <div id="how" class="step" data-x="-2000" data-y="0" data-rotate="700" data-scale="9">
+            How PhoneGap works:
+        </div>
+
+        <div id="how1" class="step" data-x="-2700" data-y="3200" data-rotate="740" data-scale="7">
+            The app is nothing but a full-screen web view.
+        </div>
+
+        <div id="how2" class="step" data-x="-4800" data-y="4900" data-rotate="780" data-scale="5">
+            You tell the web view what HTML page of yours to show first.
+        </div>
+
+        <div id="how3" class="step" data-x="-6900" data-y="4600" data-rotate="820" data-scale="3">
+            From that point on, it can run as a regular HTML/CSS/JS web application
+        </div>
+
+        <div id="how4" class="step" data-x="-7500" data-y="3400" data-rotate="860" data-scale="1">
+            The web view listens for and responds to JS calls.
+        </div>
+
+        <div id="when" class="step" data-x="100" data-y="0">
+            When should you use PhoneGap?
+        </div>
+
+        <div id="when1" class="step" data-x="-500" data-y="0" data-rotate="90" data-scale="1">
+            <div>When you need to write the same app for multiple devices, and don’t want to maintain 3 or 4 different code-bases*</div> 
+            <div class="small">* except for plugins</div>
+        </div>
+
+        <div id="when2" class="step" data-x="-500" data-y="500" data-rotate="180" data-scale="1">
+            When you are more comfortable with HTML/CSS/JS than Objective-C or Java
+        </div>
+
+        <div id="when3" class="step" data-x="-1000" data-y="500" data-rotate="270" data-scale="1">
+            When you want your app to be able to be used on the web, as well as various devices
+        </div>
+
+        <div id="whennot" class="step" data-x="8000" data-y="6000" data-rotate="180" data-scale="9">
+            <div>When should you <em>not</em> use PhoneGap?</div>
+            <img src="img/no-thanks.gif" />
+        </div>
+
+        <div id="whennot1" class="step" data-x="4000" data-y="6000" data-rotate="90" data-scale="9">
+            <div>When top (native) performance is a must</div>
+        </div>
+
+        <div id="whennot2" class="step" data-x="9000" data-y="4000" data-rotate="0" data-scale="9">
+            <div>If you're not comfortable with HTML/CSS/JS</div>
+        </div>
+
+        <div id="whennot3" class="step" data-x="13000" data-y="7000" data-rotate="-90" data-scale="9">
+            <div>If you're only worried about one type of device (maybe)</div>
+            <img src="img/one.gif" />
+        </div>
+
+        <div id="do" class="step" data-x="0" data-y="1000" data-rotate="0" data-scale="1">
+            What can you do with PhoneGap using only Javascript?
+        </div>
+
+        <div id="do1" class="step" data-x="-15000" data-y="2000" data-rotate="0" data-scale="10" data-rotate-y="-20">
+            Use/track the accelerometer
+        </div>
+
+        <div id="do2" class="step" data-x="-15000" data-y="3000" data-rotate="0" data-scale="10" data-rotate-y="-40">
+            Take pictures with the camera or pick from their photo gallery
+        </div>
+
+        <div id="do3" class="step" data-x="-15000" data-y="4000" data-rotate="0" data-scale="10" data-rotate-y="-60">
+            Capture audio, images, or video
+        </div>
+
+        <div id="do4" class="step" data-x="-15000" data-y="5000" data-rotate="0" data-scale="10" data-rotate-y="-80">
+            Get compass data
+        </div>
+
+        <div id="do5" class="step" data-x="-15000" data-y="6000" data-rotate="0" data-scale="10" data-rotate-y="-100">
+            Get notifications about connectivity (online, offline, wifi vs 3G, etc)
+        </div>
+
+        <div id="do6" class="step" data-x="-15000" data-y="7000" data-rotate="0" data-scale="10" data-rotate-y="-120">
+            Have access to contacts read and write
+        </div>
+
+        <div id="do7" class="step" data-x="-15000" data-y="8500" data-rotate="0" data-scale="10" data-rotate-y="-140">
+            Get information about the device that is running your app (UUID, version, model, etc)
+        </div>
+
+        <div id="do8" class="step" data-x="-15000" data-y="10500" data-rotate="0" data-scale="10" data-rotate-y="-160">
+            Receive events about when your app is started, resumed, closed, etc
+        </div>
+
+        <div id="do9" class="step" data-x="-15000" data-y="12500" data-rotate="0" data-scale="10" data-rotate-y="-180">
+            Receive events about incoming calls, messages, battery events, volume changes, etc
+        </div>
+
+        <div id="do10" class="step" data-x="-15000" data-y="14000" data-rotate="0" data-scale="10" data-rotate-y="-200">
+            Read from the file system
+        </div>
+
+        <div id="do11" class="step" data-x="-15000" data-y="15000" data-rotate="0" data-scale="10" data-rotate-y="-220">
+            Get geolocation information
+        </div>
+
+        <div id="do12" class="step" data-x="-15000" data-y="16000" data-rotate="0" data-scale="10" data-rotate-y="-240">
+            Work with globalization
+        </div>
+
+        <div id="do13" class="step" data-x="-15000" data-y="17200" data-rotate="0" data-scale="10" data-rotate-y="-260">
+            Send notifications (sounds, vibrations, alerts, etc)
+        </div>
+
+        <div id="do14" class="step" data-x="-15000" data-y="19000" data-rotate="0" data-scale="10" data-rotate-y="-280">
+            Read/write to WebSQL (or SQLite) databases
+        </div>
+
+        <div id="do15" class="step" data-x="-15000" data-y="20700" data-rotate="0" data-scale="10" data-rotate-y="-300">
+            Anything else you want to create (plugins are easy to write!)
+        </div>
+
+        <div id="keep" class="step" data-x="-15000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="0" data-rotate-y="-300">
+            Things to keep in mind:
+        </div>
+
+        <div id="keep1" class="step" data-x="-10000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="0" data-rotate-y="-300">
+            All internal URLs (to css, js, fonts, images, etc) must be relative.
+        </div>
+
+        <div id="keep2" class="step" data-x="-5000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="0" data-rotate-y="-300">
+            An absolute URL is equivalent to the root of the device’s filesystem (e.g. /foo/bar.jpg means file:///foo/bar.jpg, instead of the path to your app’s files)
+        </div>
+
+        <div id="keep3" class="step" data-x="0" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="0" data-rotate-y="-300">
+            <div>The simulator is only a simulator. Test everything on the device early and often.</div>
+            <img src="img/miscommunication.gif" />
+        </div>
+
+        <div id="keep4" class="step" data-x="5000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="0" data-rotate-y="-300">
+            <div>Debugging is not as easy as in a browser.</div>
+        </div>
+
+        <div id="keep5" class="step" data-x="10000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="0" data-rotate-y="-300">
+            <div>If you want to develop for iPhone, you do need a Mac*</div>
+            <div class="small">* Well, not necessarily. Check out PhoneGap Build.</div>
+        </div>
+
+        <div id="keep6" class="step" data-x="10000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="180" data-rotate-y="-300">
+            The iPhone and Android mobile browsers are like Chrome and Firefox. They are very similar, but there are some differences that will affect your CSS and JS performance.
+        </div>
+
+        <div id="keep7" class="step" data-x="5000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="180" data-rotate-y="-300">
+            Windows Phone is like IE10 (general support for CSS3 and HTML5)
+        </div>
+
+        <div id="keep8" class="step" data-x="0" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="180" data-rotate-y="-300">
+            Animations can be choppy unless you invoke the GPU. By default, jquery animations do not. CSS3 3D transforms do.
+        </div>
+
+        <div id="keep9" class="step" data-x="-5000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="180" data-rotate-y="-300">
+            <div>Just because something is choppy or sluggish in PhoneGap at first doesn’t mean you should give up. </div>
+
+            <div>Generally, with a little optimization, you can get it to look/feel just like a native app.</div>
+        </div>
+
+        <div id="keep10" class="step" data-x="-10000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="180" data-rotate-y="-300">
+            <div>Available features are <em>mostly</em> the same across devices</div>
+            <img src="img/features.png" />
+        </div>
+
+        <div id="start" class="step" data-x="0" data-y="0" data-rotate-y="90" data-scale="1">
+            Getting Started is easy:
+        </div>
+
+        <div id="start1" class="step" data-x="0" data-y="300" data-rotate-y="90" data-scale="1">
+            http://docs.phonegap.com is an awesome resource
+        </div>
+
+        <div id="start2" class="step" data-x="0" data-y="600" data-rotate-y="90" data-scale="1">
+            Download and install the SDKs for the platforms you want to use (Android, iOS, Windows Phone, etc)
+        </div>
+
+        <div id="start3" class="step" data-x="0" data-y="900" data-rotate-y="90" data-scale="1">
+            Download and install (unzip) Cordova
+        </div>
+
+        <div id="start4" class="step" data-x="0" data-y="1200" data-rotate-y="90" data-scale="1">
+            Create a project for each platform you want to build for
+        </div>
+
+        <div id="code" class="step" data-x="0" data-y="1200" data-rotate-y="180" data-scale="1">
+            <div class="grow">
+                Let's write some code!
+            </div>
+            <img src="img/code.gif" />
+        </div>
+
+        <div id="questions" class="step">
+            <h1><strong>Questions?</strong></h1>
+
+            <div class="medium">github.com/bryanhales</div>
+            <div class="medium">@bryanhales</div>
+            <div class="medium">&#098;&#114;&#121;&#097;&#110;&#104;&#097;&#108;&#101;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</div>
+        </div>
+
+    </div>
+
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+</body>
+</html>
